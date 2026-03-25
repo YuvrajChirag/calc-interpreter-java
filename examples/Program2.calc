@@ -1,1 +1,4 @@
+name := "Sitare"
+>> name
+>> "Hello from CALC"
 
