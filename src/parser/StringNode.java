@@ -3,14 +3,14 @@ package parser;
 import environment.Environment;
 
 public class StringNode implements Expression {
-    private final String value;
+    private final String val;
 
-    public StringNode(String value) {
-        this.value = value;
+    public StringNode(String val) {
+        this.val = val;
     }
 
     @Override
     public Object evaluate(Environment env) {
-        return value;
+        return val;
     }
 }
