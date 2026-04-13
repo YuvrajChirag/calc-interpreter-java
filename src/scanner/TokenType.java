@@ -16,19 +16,14 @@ public enum TokenType {
     MINUS,     // -
     STAR,      // *
     SLASH,     // /
-
-    
+       
     ASSIGN, // Assignment operator token (:=)
 
-    
-    PRINT, // Print operator token (>>)
+    PRINT, // Print operator token (>>) 
 
-   
     IF,  // Conditional keyword token (?)
-
    
     REPEAT,  // Loop keyword token (@)
-
     
     ARROW, // Arrow operator token (=>), often used in mappings or expressions
 
@@ -45,7 +40,6 @@ public enum TokenType {
     NEWLINE,   // Indicates end of a line
     INDENT,    // Indicates increased indentation level
     DEDENT,    // Indicates decreased indentation level
-
     
     EOF // End-of-file token to mark input termination
 }
