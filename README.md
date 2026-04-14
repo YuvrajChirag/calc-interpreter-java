@@ -28,7 +28,7 @@ A simple interpreter for a custom indentation-aware scripting language.
 ## 📁 Project Structure
 
 ```text
-DEMO_JAVA_PROJ/
+calc-interpreter-java/
 ├── examples/
 │   ├── program1.calc
 │   ├── program2.calc
