@@ -126,6 +126,10 @@ public class Parser {
             List<Instruction> body = parseBlock();
             return new RepeatInstruction(countExpr, body);
         }
+        if (match(TokenType.PRINT)) {
+            Expression expression = parseExpression();
+            return new PrintInstruction(expression);
+        }
         // Assignment: variable = expression
         if (check(TokenType.IDENTIFIER) && checkNext(TokenType.ASSIGN)) {
             String name = consume(TokenType.IDENTIFIER, "Expected variable name.").getValue();
